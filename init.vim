@@ -10,7 +10,7 @@ call plug#end()
 
 
 set hidden          " 
-" Indicador lateral de linha
+" Indicador lateral de linha {
 set number          " habilita o indicador
 set relativenumber  " habilita o indicador relativo
 " }
