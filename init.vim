@@ -9,11 +9,15 @@ Plug 'jiangmiao/auto-pairs'
 call plug#end()
 " }
 
-
 set hidden          " 
+
 " Indicador lateral de linha {
-set number          " habilita o indicador
-set relativenumber  " habilita o indicador relativo
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 " }
 
 " Espacos e tab {
@@ -33,6 +37,9 @@ colorscheme gruvbox
 let mapleader="\<space>"    " tecla atalho leader
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>x :x<cr>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 " }
