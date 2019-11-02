@@ -5,6 +5,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 " }
 
@@ -25,6 +26,7 @@ set shiftwidth=4    " numero de espacos ao autoidentar
 
 " Estilizaçao {
 set background=dark
+colorscheme gruvbox
 " }
 
 " Atalhos {
