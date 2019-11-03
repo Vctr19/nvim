@@ -6,10 +6,13 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'cocopon/iceberg.vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 " }
 
-set hidden          " 
+set hidden 
 
 " Indicador lateral de linha {
 set number relativenumber
@@ -29,8 +32,10 @@ set shiftwidth=4    " numero de espacos ao autoidentar
 " }
 
 " Estilizaçao {
+set termguicolors   " enable true colors
+let ayucolor="dark" " set ayu dark theme
+colorscheme ayu
 set background=dark
-colorscheme gruvbox
 " }
 
 " Atalhos {
