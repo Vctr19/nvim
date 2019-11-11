@@ -11,6 +11,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'mattn/emmet-vim'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 " }
 
@@ -19,6 +20,9 @@ let g:deoplete#enable_at_startup = 1
 
 " enable files to be hidden
 set hidden 
+
+" set encoding
+set encoding=UTF-8
 
 " <TAB>: completion
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
