@@ -12,6 +12,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'mattn/emmet-vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 " }
 
@@ -44,8 +45,8 @@ set softtabstop=4   " numero de espacos no tab ao editar
 set shiftwidth=4    " numero de espacos ao autoidentar
 " }
 
-" lintin config {
-" }
+" change indent char
+let g:indentLine_char = '.'
 
 " colorscheme {
 set termguicolors   " enable true colors
